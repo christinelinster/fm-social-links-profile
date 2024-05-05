@@ -1,20 +1,9 @@
-/* 
-### Primary
-
-- Green: hsl(75, 94%, 57%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Grey: hsl(0, 0%, 20%)
-- Dark Grey: hsl(0, 0%, 12%)
-- Off Black: hsl(0, 0%, 8%) */
-
 body, #profile{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 body{
@@ -39,12 +28,20 @@ body{
 
 .description h1 {
     font-size: 24px;
+    margin: 24px 0 5px;
 }
 
 .description .location{
     color: hsl(75, 94%, 57%);
     font-weight: 600;
+    margin: 0;
 }
+
+.description .summary{
+    margin-top: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
 
 .buttons{
     display: flex;
@@ -54,7 +51,7 @@ body{
 div button{
     background-color: hsl(0, 0%, 20%);
     color: hsl(0, 0%, 100%);
-    width: 18rem;
+    width: 19rem;
     height: 3rem;
     border: none;
     border-radius: 10px;
@@ -63,8 +60,16 @@ div button{
 }
 
 
+div button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%) ;
+}
 
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+.attribution a { 
+    color: hsl(75, 94%, 57%); }
