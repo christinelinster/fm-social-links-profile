@@ -1,0 +1,70 @@
+/* 
+### Primary
+
+- Green: hsl(75, 94%, 57%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%) */
+
+body, #profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter";
+    font-size: 14px;
+}
+
+#profile{
+    background-color: hsl(0, 0%, 12%);
+    width: 384px;
+    height: 75%;
+    border-radius: 10px;
+}
+.description img{
+    width: 5rem;
+    border-radius: 100%;
+}
+
+.description h1 {
+    font-size: 24px;
+}
+
+.description .location{
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+div button{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 18rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    margin: 8px 0;
+    font: 600 14px "Inter";
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
